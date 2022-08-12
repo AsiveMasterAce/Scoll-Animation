@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bc6c25;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.box {
+    background-color: #283618;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: -7px 1px 5px -1px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: -7px 1px 5px -1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: -7px 1px 5px -1px rgba(0, 0, 0, 0.4);
+    transform: translateX(200%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-200%);
+}
+
+.box.show {
+    font-size: 29px;
+    transform: translateX(0);
+}
